@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #212529;
+}
+
+/* Typography */ 
+
+h1 {
+    font-size: 1.85rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    line-height: 3;
+    font-size: 1.25em;
+}
+
+.container-flex h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+span,
+p {
+    letter-spacing: 1.2px;
+}
+
+.blog-date,
+.blog-card-date {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* Navigation */
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.35em;
+}
+
+.icon-heading {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav li {
+    margin-left: 3em;
+}
+
+/*  Layout  */
+
+main {
+    padding: 2em 1.5em;
+}
+
+header {
+    padding: 1.25em;
+    background-color: whitesmoke;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1.25em;
+    background-color: #212529;
+    color: #fff;
+}
+
+/*  Blog Featured */ 
+
+.blog-featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.hero-img {
+    min-height: 450px;
+    padding: 2em 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Recent Posts */
+
+.post-heading {
+    text-align: center;
+    margin-top: 2em;
+    text-decoration: underline;
+}
+
+.view-more,
+.blog-card {
+    margin-top: 2.5em;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-img {
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 1em;
+    object-fit: cover;
+}
+
+.blog-card-img:hover {
+    transform: scale(1.05);
+}
+
+
+.blog-card-heading {
+    margin-bottom: -0.3em;
+}
+
+@media (min-width: 860px) {
+
+    .grid-container {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+    }
+    .container {
+        max-width: 1200px;
+    }
+
+    .view-more {
+        grid-column: span 3;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 0.65em;
+    }
+
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        line-height: 1.5;
+    }
+
+    p {
+        line-height: normal;
+        letter-spacing: normal;
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    .blog-date,
+    .blog-card-date {
+        font-size: 0.85rem;
+    }
+
+    .post-heading {
+        margin: 2em 0 -1em 0;
+        font-size: 1.15rem;
+    }
+
+    .resize{
+        padding: 1.5em 3em;
+    }
+
+}
