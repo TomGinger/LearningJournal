@@ -81,6 +81,7 @@ footer {
     flex-direction: column;
     width: 90%;
     padding: 2em 0;
+    margin-top: -4em;
 }
 
 
@@ -133,7 +134,14 @@ nav li {
 }
 
 
-/*  Recent posts */
+/*  My projects */
+
+.post-heading {
+    text-align: center;
+    margin-top: 5em;
+    text-decoration: underline;
+}
+
 .view-more,
 .blog-card {
     margin-top: 2.5em;

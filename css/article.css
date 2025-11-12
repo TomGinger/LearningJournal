@@ -119,7 +119,7 @@ footer {
     width: 100%;
 }
 
-/* Recent Posts */
+/* My projects */
 
 .post-heading {
     text-align: center;
@@ -151,6 +151,15 @@ footer {
 
 .blog-card-heading {
     margin-bottom: -0.3em;
+}
+
+.view-more {
+    font-size: 1.15rem;
+    color: #212529;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 @media (min-width: 860px) {

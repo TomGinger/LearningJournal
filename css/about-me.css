@@ -117,7 +117,7 @@ footer {
 
 
 
-/* Recent Posts */
+/* My projects */
 
 .post-heading {
     text-align: center;
@@ -156,6 +156,14 @@ footer {
     text-transform: uppercase;
 }
 
+.view-more {
+    font-size: 1.15rem;
+    color: #212529;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1em;
+}
 
 /* Media queries */
 
