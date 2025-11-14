@@ -139,7 +139,7 @@ footer {
     width: 100%;
     border-radius: 5px;
     padding-bottom: 1em;
-    object-fit: cover;
+    cursor: pointer;
 }
 
 .blog-card-img:hover {
