@@ -133,7 +133,6 @@ footer {
 }
 
 .skills h2 {
-    font-weight: 400;
     letter-spacing: 1px;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -154,61 +153,125 @@ footer {
 }
 
 .progress-bar div span {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     background-color: #fff;
     float: right;
     margin-top: -15px;
     margin-right: -20px;
-    color: #fff;
+    color: #333;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.html{
+.html,
+.java,
+.vs-code{
     background-color: #335c67;
+}
+
+.css,
+.cmd {
+    background-color: #007f5f;
+}
+
+.javascript,
+.python,
+.figma {
+    background-color: #e09f3e;
+}
+
+.bootstrap,
+.git-hub {
+    background-color: #9e2a2b;
+}
+
+.react,
+.sql,
+.netlify {
+    background-color: #540b0e;
+}
+
+.html {
     width: 90%;
 }
 
 .css {
-    background-color: #fff3b0;
     width: 75%;
 }
 
 .javascript {
-    background-color: #e09f3e;
     width: 60%;
 }
 
 .bootstrap {
-    background-color: #9e2a2b;
     width: 60%;
 }
 
 .react {
-    background-color: #540b0e;
     width: 20%;
 }
 
-.html span {
+.java {
+    width: 40%;
+}
+
+.python {
+    width: 20%;
+}
+
+.sql {
+    width: 40%;
+}
+
+.vs-code {
+    width: 85%;
+}
+
+.cmd {
+    width: 50%;
+}
+
+.figma {
+    width: 70%;
+}
+
+.git-hub {
+    width: 60%;
+}
+
+.netlify {
+    width: 60%;
+}
+
+.html span,
+.java span,
+.vs-code span {
     border: 2px solid #335c67;
 }
 
-.css span {
-    border: 2px solid #fff3b0;
+.css span,
+.cmd span {
+    border: 2px solid #007f5f;
 }
 
-.javascript span {
+.javascript span,
+.python span,
+.figma span {
     border: 2px solid #e09f3e;
 }
 
-.bootstrap span {
+.bootstrap span,
+.git-hub span {
     border: 2px solid #9e2a2b;
 }
 
-.react span {
+.react span,
+.sql span,
+.netlify span {
     border: 2px solid #540b0e;
 }
 
