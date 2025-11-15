@@ -39,11 +39,6 @@ p {
     margin-right: 0.35em;
 }
 
-.blog-featured a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .blog-date,
 .blog-card-date {
     text-transform: uppercase;
@@ -56,6 +51,10 @@ p {
 .grid-container,
 .container {
     margin: 0 auto;
+}
+
+section {
+    min-height: 100vh;
 }
 
 .nav-flex {
