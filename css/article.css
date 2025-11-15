@@ -175,6 +175,7 @@ footer {
 }
 
 .view-more {
+    display: block;
     font-size: 1.15rem;
     color: #212529;
     font-weight: bold;

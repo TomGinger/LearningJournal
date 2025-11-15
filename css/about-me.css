@@ -338,6 +338,7 @@ footer {
 }
 
 .view-more {
+    display: block;
     font-size: 1.15rem;
     color: #212529;
     font-weight: bold;
@@ -370,8 +371,9 @@ footer {
         justify-self: center;
     }
 
-    .view-more {
+    .view-more{
         grid-column: span 3;
+        text-align: center;
         font-size: 1rem;
     }
 
