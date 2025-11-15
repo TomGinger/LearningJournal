@@ -26,6 +26,12 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.35em;
+}
+
 /* Form */
 
 .contact-form form {
@@ -66,8 +72,8 @@ form textarea {
 
 /* Images */
 .contact-img {
-    position: relative; /* Důležité pro absolutní pozici ::after */
-    overflow: hidden; /* Jen pro jistotu, aby nic nevyteklo */
+    position: relative;
+    overflow: hidden; 
 }
 
 .contact-img img {
@@ -126,16 +132,33 @@ footer {
 }
 
 /*  Navigation */ 
-.icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.35em;
-}
-
 .icon-heading {
     display: flex;
     align-items: center;
 }
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.397);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    margin: 1.2em 1.75em;
+}
+
 
 
 nav ul {
@@ -188,4 +211,14 @@ nav li {
         font-size: 0.85rem;
     }
 
+    .hideOnDesktop {
+        display: none;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .hideOnMobile {
+        display: none;
+    }
 }

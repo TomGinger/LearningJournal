@@ -19,12 +19,21 @@
                 <h2>My Portfolio</h2>
             </div>
             <nav>
-                <ul>
+                <ul class="sidebar" id="sidebar">
+                    <li id="close-icon"><a href="#"><img src="images/close-icon.png" alt="Icon of letter X"></a></li>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about-me.html">About me</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a class="active" href="contact.html">Contact</a></li>
                     <li><a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-ridvan/" target="_blank">LinkedIn</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a class="active" href="home.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="about-me.html">About me</a></li>
+                    <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li class="hideOnMobile"><a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-ridvan/" target="_blank">LinkedIn</a></li>
+                    <li class="hideOnDesktop" id="menu-icon"><a href="#"><img src="images/menu-icon.png" alt="Hamburger menu icon"></a></li>
                 </ul>
             </nav>
 
@@ -35,7 +44,7 @@
             <div class="contact container">
                 <div class="contact-form">
                     <h1>Contact <span>Me</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum asperiores aspernatur fugit minus tenetur quae aliquid repudiandae quia corporis, nisi, optio ullam rem delectus aperiam ab provident dicta molestiae?</p>
+                    <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
                     <form action="">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
@@ -58,6 +67,6 @@
         <p><strong>My Portfolio</strong></p>
         <p>Copyright &copy;2025</p>
     </footer>
-        
+    <script src="JavaScript/index.js"></script>
 </body>
 </html>
