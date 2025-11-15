@@ -43,12 +43,12 @@ form textarea {
     width: 100%;
     padding: 17px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
     background-color: #191919;
     color: #fff;
     font-size: 1.1rem;
-    margin-bottom: 0.7rem;
+    margin: 0.7rem 0;
 
 }
 
@@ -68,6 +68,11 @@ form textarea {
 .contact-form form .btn:hover {
     background-color: #f4a261;
     transform: scale(1.1);
+}
+
+.contact-form label {
+    font-weight: 700;
+
 }
 
 /* Images */
@@ -106,7 +111,7 @@ form textarea {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
-    grid-gap: 16rem;
+    grid-gap: 8rem;
 }
 
 section {
@@ -217,8 +222,24 @@ nav li {
 
 }
 
+@media (max-width: 1200px) {
+    .contact{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form .btn {
+        width: 100%;
+    }
+
+    .contact-img img {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 860px) {
     .hideOnMobile {
         display: none;
     }
 }
+
