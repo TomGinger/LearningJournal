@@ -137,7 +137,7 @@ nav li {
 }
 
 .netlify-nav {
-    text-decoration: none;
+    text-decoration: underline;
     color: #212529;
     font-weight: bold;
 }
@@ -146,6 +146,19 @@ nav li {
 .netlify-nav:focus {
     color: #f4a261;
     text-decoration: underline;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label,
+.nav-close-label {
+    cursor: pointer;
+}
+
+.nav-toggle:checked ~ .sidebar {
+    display: flex;
 }
 
 /*  Recent posts */

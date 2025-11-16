@@ -190,6 +190,19 @@ nav li {
     margin-left: 3em;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label,
+.nav-close-label {
+    cursor: pointer;
+}
+
+.nav-toggle:checked ~ .sidebar {
+    display: flex;
+}
+
 /*  Media queries   */
 
 @media (min-width: 860px) {
