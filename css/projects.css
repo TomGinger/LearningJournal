@@ -161,6 +161,18 @@ nav li {
     display: flex;
 }
 
+
+.github-link {
+    text-decoration: underline;
+    color: #f4a261;
+    font-weight: bold;
+}
+
+.github-link:hover,
+.github-link:focus {
+    color: #fff;
+}
+
 /*  Recent posts */
 .view-more,
 .blog-card {
