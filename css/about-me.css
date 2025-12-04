@@ -456,5 +456,44 @@ footer {
     }
 }
 
+/* Styly pro tisk */
+@media print {
+    nav, .sidebar, .nav-toggle-label, .view-more, .github-link { display: none !important; }
+    
+    header {
+        display: block !important;
+        background: none !important;
+    }
+
+    body, main, .container {
+        width: 100% !important;
+        margin: 0 !important;
+        background: white !important;
+        color: black !important;
+    }
+
+    .profile-flex {
+        display: block !important;
+        text-align: left;
+    }
+    
+    .profile-img {
+        float: left;
+        margin-right: 20px;
+        width: 150px; 
+        height: 150px;
+    }
+
+    .container-skills {
+        display: block !important;
+    }
+
+    .progress-bar, .html, .css, .javascript, .react, .bootstrap, .java, .python, .sql, .vs-code, .cmd, .figma, .git-hub, .netlify {
+        -webkit-print-color-adjust: exact !important; 
+        print-color-adjust: exact !important;   
+        border: 1px solid #ccc;
+    }
+}
+
 
 

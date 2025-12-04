@@ -284,3 +284,48 @@ nav li {
         display: none;
     }
 }
+
+/* Styly pro tisk */
+
+@media print {
+    nav, 
+    .sidebar, 
+    .nav-toggle-label, 
+    .nav-close-label, 
+    .view-more, 
+    .github-link {
+        display: none !important;
+    }
+
+    header {
+        display: block !important;
+        background-color: white !important;
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+    
+    header .container {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    body, main, section, .container, .grid-container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        color: black !important;
+        float: none !important;
+        box-shadow: none !important;
+    }
+
+    .grid-container, .profile-flex, .container-skills {
+        display: block !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+}

@@ -268,3 +268,19 @@ nav li {
     }
 }
 
+
+/* Styly pro tisk */
+@media print {
+    nav, .sidebar, .nav-toggle-label, .github-link, .contact-img, .btn { display: none !important; }
+
+    header {
+        display: block !important;
+        background: none !important;
+    }
+
+    body, main, .container {
+        width: 100% !important;
+        background: white !important;
+        color: black !important;
+    }
+}

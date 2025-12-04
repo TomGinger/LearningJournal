@@ -248,3 +248,32 @@ nav li {
         display: none;
     }
 }
+
+/* Styly pro tisk */
+@media print {
+    nav, .sidebar, .nav-toggle-label, .github-link { display: none !important; }
+
+    header {
+        display: block !important;
+        background: none !important;
+    }
+
+    body, main, .container {
+        width: 100% !important;
+        color: black !important;
+        background: white !important;
+    }
+
+    .grid-container {
+        display: block !important;
+    }
+
+    .blog-card {
+        page-break-inside: avoid;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    
+
+    a { color: black !important; text-decoration: none !important; }
+}

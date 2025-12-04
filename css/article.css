@@ -274,3 +274,51 @@ footer {
         display: none;
     }
 }
+
+
+/* Styly pro tisk */
+@media print {
+    nav, 
+    .sidebar, 
+    .nav-toggle-label, 
+    .view-more,
+    .github-link
+    {
+        display: none !important;
+    }
+
+    header {
+        display: block !important;
+        background: none !important;
+        margin-bottom: 20px;
+    }
+
+    body, main, .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 10px 0; 
+        page-break-inside: avoid; 
+    }
+
+    p, h1, h2, h3, li {
+        color: #000 !important;
+        page-break-inside: avoid; 
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #000 !important;
+        font-weight: bold;
+    }
+}
